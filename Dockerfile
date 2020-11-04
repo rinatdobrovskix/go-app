@@ -18,4 +18,5 @@ ENV HOME /app
 WORKDIR /app
 RUN useradd -m heroku
 USER heroku
+RUN /tmp/buildpack/heroku/go/bin/go build /app
 CMD /app/go-app
