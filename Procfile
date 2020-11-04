@@ -1,1 +1,1 @@
-web: go-app
+web: /app/go-app
