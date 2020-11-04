@@ -6,6 +6,8 @@ import (
 )
 
 func main() {
-    http.ListenAndServe(":8080", nil)
+    port := os.Getenv("PORT")
+    
+    http.ListenAndServe(":" + port, nil)
     os.Exit(0)
 }
